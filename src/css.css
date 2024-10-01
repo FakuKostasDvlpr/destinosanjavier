@@ -1,0 +1,87 @@
+/* Vinilo.css */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+  p{
+    font-family: "Bebas Neue", sans-serif;
+
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .outer-border {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    border: 3px solid #663300;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A0522D;
+  }
+  
+  .text-top {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f0f0f0;
+    margin: 0;
+  }
+  
+  .circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .inner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 10px;
+  }
+  
+  .lp, .year {
+    font-size: 18px;
+    color: #f0f0f0;
+  }
+  
+  .discover {
+    font-size: 20px;
+    color: #f0f0f0;
+    margin-top: 20px;
+  }
+
+
+
+  

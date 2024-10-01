@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Oriya:wght@400..700&family=Staatliches&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+    font-family: "Noto Serif Oriya", serif;
+    font-optical-sizing: auto;
+}
+
+.textVinilo {
+  font-family: "Bebas Neue", sans-serif;
+  line-height: 54px;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
