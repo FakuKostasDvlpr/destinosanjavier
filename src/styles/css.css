@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Sunflower:wght@300;500;700&display=swap');
+h1{
+  font-family: "Questrial", sans-serif;
+
+}
+
+.ViewsTrack{
+  font-family: "Sunflower", sans-serif;
+}
+
+.shadow-input{
+
+  background-color: #B6BB77;
+  color: white;
+  gap: 30px;
+  width: 100%;
+    max-width: 550px;
+    margin: auto;
+}
+
+#scrollToTopBtn {
+  display: none; /* Oculto por defecto */
+  position: fixed; /* Posición fija */
+  bottom: 20px; /* Distancia desde el fondo */
+  right: 20px; /* Distancia desde la derecha */
+  background-color: #BCC27C; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 50%; /* Bordes redondeados */
+  width: 50px; /* Ancho */
+  height: 50px; /* Alto */
+  font-size: 24px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambiar cursor al pasar el ratón */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+  transition: background-color 0.3s; /* Transición suave para el fondo */
+}
+
+#scrollToTopBtn:hover {
+  background-color: #d4dd73; /* Cambiar el color de fondo al pasar el ratón */
+}

@@ -1,4 +1,4 @@
-import "../index.css";
+import "../styles/index.css";
 
 const Vinilo = ({ title, year, imageUrl, description, leftText, backgroundColor }) => {
   return (
@@ -28,6 +28,7 @@ const Vinilo = ({ title, year, imageUrl, description, leftText, backgroundColor 
           <div className="flex items-center justify-center mb-20">
             <p className="textVinilo text-4xl underline smt-8 font-semibold text-gray-500">{description}</p>
           </div>
+          <a href="/Hero">a</a>
         </div>
       </div>
     </section>
