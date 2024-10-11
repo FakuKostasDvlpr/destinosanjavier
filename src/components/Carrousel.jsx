@@ -82,7 +82,7 @@ const ImageSliderWithAudioPlayer = () => {
     <>
       <section className="relative h-fit mb-10 w-full bg-transparent flex flex-col items-center justify-center overflow-hidden">
         <div className="flex items-center justify-center">
-          <BackgroundLines />
+          {/* <BackgroundLines /> */}
         </div>
         <div className="relative flex mb-20 bg-white">
           <h1 className="text-black bold" style={{ fontSize: 'clamp(2rem, 5vw, 4rem)' }}>

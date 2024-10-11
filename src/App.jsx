@@ -12,7 +12,7 @@ import './styles/css.css'
 
 function App() {
   const scrollToTop = () => {
-    const scrollDuration = 200; // Duración del desplazamiento en milisegundos
+    const scrollDuration = 500;
     const scrollStep = -window.scrollY / (scrollDuration / 15);
     const scrollInterval = setInterval(() => {
       if (window.scrollY !== 0) {
@@ -40,7 +40,7 @@ function App() {
 
   return (
     <>
-      <div className='flex items-center justify-center mt-40'>
+      <div className='flex items-center justify-center mt-32'>
         <NavbarDemo/>
       </div>
       <div id="hero">
