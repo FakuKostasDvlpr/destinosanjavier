@@ -49,7 +49,7 @@ const ImageSliderWithAudioPlayer = () => {
       zIndex = 1;
       opacity = 0.4;
     } else if (diff > 1) {
-      translateX = `${-diff * 90}px`;
+      translateX = `${-diff * 124}px`;
       scale = 0.6;
       zIndex = 1;
       opacity = 0.4;
@@ -84,7 +84,7 @@ const ImageSliderWithAudioPlayer = () => {
         <div className="flex items-center justify-center">
           {/* <BackgroundLines /> */}
         </div>
-        <div className="relative flex mb-20 bg-white">
+        <div className="relative flex mb-20 bg-white mt-40">
           <h1 className="text-black bold" style={{ fontSize: 'clamp(2rem, 5vw, 4rem)' }}>
             Lo más <span style={{ fontSize: 'clamp(2rem, 5vw, 4rem)' }}>escuchado</span>
           </h1>
@@ -101,14 +101,16 @@ const ImageSliderWithAudioPlayer = () => {
             >
               {index === currentIndex && (
                 <div className="flex bg-white justify-center items-center">
-                  <EyeIcon color="#9d4edd" size={30} />
+                  <div className='pt-3 px-1'>
+                    <EyeIcon color="#9d4edd" size={22} />
+                  </div>
                   <p
                     className="ViewsTrack font-bold"
                     style={{ fontSize: 'clamp(2rem, 5vw, 3rem)' }}
                   >
                     <span
                       className="text-[#9d4edd] font-bold"
-                      style={{ fontSize: 'clamp(1.5rem, 3vw, 2.5rem)' }}
+                      style={{ fontSize: 'clamp(1.5rem, 1vw, 2.5rem)' }}
                     >
                       {song.views}
                     </span>
@@ -119,7 +121,7 @@ const ImageSliderWithAudioPlayer = () => {
                 <img
                   src={song.image}
                   alt={song.name}
-                  className="rounded-lg object-contain shadow-2xl w-full md:max-w-[190px] max-w-[170px]"
+                  className="rounded-lg object-contain shadow-2xl w-full md:max-w-[330px] max-w-[200px]"
                 />
               </div>
             </div>
