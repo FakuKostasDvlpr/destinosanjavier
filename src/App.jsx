@@ -12,16 +12,25 @@ import './styles/css.css'
 
 function App() {
   const scrollToTop = () => {
-    const scrollDuration = 500;
-    const scrollStep = -window.scrollY / (scrollDuration / 15);
-    const scrollInterval = setInterval(() => {
-      if (window.scrollY !== 0) {
-        window.scrollBy(0, scrollStep);
-      } else {
-        clearInterval(scrollInterval);
+    const scrollDuration = 500; // Duración en milisegundos
+    const start = window.scrollY;
+    const change = -start;
+    const startTime = performance.now();
+  
+    const animateScroll = (currentTime) => {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / scrollDuration, 1); // Normaliza el progreso entre 0 y 1
+      const easeInOutQuad = progress < 0.5 ? 2 * progress * progress : -1 + (4 - 2 * progress) * progress; // Easing
+      window.scrollTo(0, start + change * easeInOutQuad);
+  
+      if (progress < 1) {
+        requestAnimationFrame(animateScroll);
       }
-    }, 15);
+    };
+  
+    requestAnimationFrame(animateScroll);
   };
+  
 
   useEffect(() => {
     const button = document.getElementById('scrollToTopBtn');

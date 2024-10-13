@@ -9,6 +9,7 @@ const eventData = [
         time: "Jueves 21:00",
         detailsLink: "https://Alpogo.com",
         ticketLink: "https://alpogo.com/evento/destino-san-javier-marcos-juarez-15259",
+        disponible: false, // Fecha pasada
     },
     {
         id: 2,
@@ -20,28 +21,31 @@ const eventData = [
         time: "Martes 20:00",
         detailsLink: "https://conciertos.com",
         ticketLink: "https://conciertos.com/evento/concierto-clasico-buenos-aires-15260",
+        disponible: true,
     },
     {
         id: 3,
-        date: "10",
-        month: "MAR",
+        date: "25",
+        month: "SEPT",
         title: "ROCK NACIONAL",
         provincia: "Cordoba",
         location: "ESTADIO KEMPES",
         time: "Sábado 18:00",
         detailsLink: "https://rocknacional.com",
         ticketLink: "https://rocknacional.com/evento/rock-nacional-cordoba-15261",
+        disponible: false, // Fecha pasada
     },
     {
         id: 4,
         date: "15",
         month: "NOV",
         title: "ROCK NACIONAL",
-        provincia: "Estados unidos",
+        provincia: "Estados Unidos",
         location: "ESTADIO KEMPES",
         time: "Sábado 17:00",
         detailsLink: "https://rocknacional.com",
         ticketLink: "https://rocknacional.com/evento/rock-nacional-cordoba-15261",
+        disponible: true,
     },
     {
         id: 5,
@@ -53,17 +57,19 @@ const eventData = [
         time: "Sábado 14:00",
         detailsLink: "https://rocknacional.com",
         ticketLink: "https://rocknacional.com/evento/rock-nacional-cordoba-15261",
+        disponible: true,
     },
     {
-        id:6,
+        id: 6,
         date: "11",
         month: "ENE",
         title: "ROCK NACIONAL",
-        provincia: "Paraguay asuncion",
+        provincia: "Paraguay Asunción",
         location: "ESTADIO KEMPES",
         time: "Sábado 11:00",
         detailsLink: "https://rocknacional.com",
         ticketLink: "https://rocknacional.com/evento/rock-nacional-cordoba-15261",
+        disponible: false, // Evento futuro, pero no disponible
     },
 ];
 
